@@ -24,25 +24,26 @@ const MobileSidebar = () => {
       [section]: !prevState[section],
     }));
   };
+  
   return (
     <div>
       <aside
           id="sidebar"
-          className={`w-${clicked ? "1/4" : "24"}
+          className={`w-${clicked ? "1/4" : "24"} 
           ${ window.innerWidth > 768 ? 'hidden' : 'block bg-white w-full h-screen left-0 absolute'}
         h-120 text-xl border-r border-gray-700 `}
         >
           <FontAwesomeIcon
             icon={clicked ? faArrowLeft : faArrowRight}
             onClick={handleToggle}
-            className="toggleButton text-2xl px-6 pb-0 mb-0 mt-4"
+            className={`toggleButton text-2xl px-6 pb-0 mb-0 mt-4`}
           />
           {clicked ? (
             <ul className="mt-4 border-t-2 space-y-2">
               <li
                 className={` ${
-                  liclicked.dash ? "bg-green-200 text-green-600" : ""
-                } p-4 pl-16 border-b-2`}
+                  liclicked.dash ? "text-green-600" : ""
+                } p-4 pl-16 mt-2`}
                 onClick={() => handleClick("dash")}
               >
                 <a href="#" className="hover:text-green-600 flex items-center">
@@ -84,9 +85,10 @@ const MobileSidebar = () => {
                   </svg>{" "}
                 </a>
               </li>
+              <hr className="border-t-2 border-gray-300"/>
               <li
                 className={` ${
-                  liclicked.links ? "bg-green-200 text-green-600" : ""
+                  liclicked.links ? "text-green-600" : ""
                 } p-4 pl-16 border-b-2`}
                 onClick={() => handleClick("links")}
               >
@@ -135,7 +137,7 @@ const MobileSidebar = () => {
               </li>
               <li
                 className={` ${
-                  liclicked.summ ? "bg-green-200 text-green-600" : ""
+                  liclicked.summ ? "text-green-600" : ""
                 } p-4 pl-16  border-b-2`}
                 onClick={() => handleClick("summ")}
               >
@@ -192,7 +194,7 @@ const MobileSidebar = () => {
               </li>
               <li
                 className={` ${
-                  liclicked.details ? "bg-green-200 text-green-600" : ""
+                  liclicked.details ? "text-green-600" : ""
                 } p-4 pl-16 border-b-2`}
                 onClick={() => handleClick("details")}
               >
@@ -240,7 +242,7 @@ const MobileSidebar = () => {
             </ul>
           ) : (
             <ul className="mt-4 space-y-2">
-              <li className="pl-8 p-4 flex justify-center items-center hover:bg-green-200 m-0">
+              <li className="pl-8 p-4 flex justify-center items-center m-0">
                 <svg
                   className="inline-block mb-1 mr-2"
                   width="24"
@@ -258,7 +260,7 @@ const MobileSidebar = () => {
                   />
                 </svg>
               </li>
-              <li className="pl-8 p-4 flex justify-center items-center hover:bg-green-200 m-0">
+              <li className="pl-8 p-4 flex justify-center items-center m-0">
                 <svg
                   className="inline-block mb-1 mr-2"
                   width="24"
@@ -281,7 +283,7 @@ const MobileSidebar = () => {
                   </defs>
                 </svg>
               </li>
-              <li className="pl-8 p-4 flex justify-center items-center hover:bg-green-200 m-0">
+              <li className="pl-8 p-4 flex justify-center items-center m-0">
                 <svg
                   className="inline-block mb-1 mr-2"
                   width="24"
@@ -314,7 +316,7 @@ const MobileSidebar = () => {
                   />
                 </svg>
               </li>
-              <li className="pl-8 p-4 flex justify-center items-center hover:bg-green-200 m-0">
+              <li className="pl-8 p-4 flex justify-center items-center m-0">
                 <svg
                   className="inline-block mb-1 mr-2"
                   width="24"

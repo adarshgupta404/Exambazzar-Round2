@@ -87,7 +87,7 @@ const Sidebar = () => {
         <li
           className={` ${
             liclicked.links ? "bg-green-200 text-green-600" : ""
-          } p-4 pl-16`}
+          } p-4 pl-16 m-0`}
           onClick={() => handleClick("links")}
         >
           <a href="#" className="hover:text-green-600 flex items-center">
