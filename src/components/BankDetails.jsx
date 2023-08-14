@@ -156,7 +156,7 @@ export default function BankDetails() {
             />
           </label>
           <label className="md:flex p-2">
-            <p className="font-bold pt-1 pl-4 ">CONSENT</p>
+            <p className="font-bold pt-1">CONSENT</p>
             <div
               className={`md:w-1/2 md:ml-auto p-4 border rounded shadow-lg ${
                 submit ? "bg-green-50" : ""
