@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="main">
       <Navbar />
-      <div className="flex w-full">
+      <div className="md:flex md:w-full">
         <Sidebar />
         <BankDetails />
       </div>

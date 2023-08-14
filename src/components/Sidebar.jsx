@@ -28,9 +28,9 @@ const Sidebar = () => {
   return (
     <aside
       id="sidebar"
-      className={`w-${clicked ? "1/4" : "24"}
+      className={`w-${clicked ? "80" : "24"}
         ${window.innerWidth < 768 ? "hidden" : "block"}
-        h-120 text-xl border-r border-gray-700`}
+         h-120 text-xl border-r border-gray-700`}
     >
       <FontAwesomeIcon
         icon={clicked ? faArrowLeft : faArrowRight}
