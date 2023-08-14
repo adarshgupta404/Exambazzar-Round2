@@ -30,7 +30,7 @@ const Sidebar = () => {
       id="sidebar"
       className={`w-${clicked ? "80" : "24"}
         ${window.innerWidth < 768 ? "hidden" : "block"}
-         h-120 text-xl border-r border-gray-700`}
+         md:w-80 h-120 text-xl border-r border-gray-700`}
     >
       <FontAwesomeIcon
         icon={clicked ? faArrowLeft : faArrowRight}
