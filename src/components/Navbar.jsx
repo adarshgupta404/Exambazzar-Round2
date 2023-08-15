@@ -35,16 +35,16 @@ const Navbar = () => {
         <li className="mx-4 md:mx-16 border-white border-b-4 hover:border-b-4 hover:border-green-600 transition duration-300">
           Home
         </li>
-        <li className="mx-4 md:mx-16 hover:border-b-4 hover:border-green-600 transition duration-300">
+        <li className="mx-4 md:mx-16 border-white border-b-4 hover:border-b-4 hover:border-green-600 transition duration-300">
           Services
         </li>
-        <li className="mx-4 md:mx-16 hover:border-b-4 hover:border-green-600 transition duration-300">
+        <li className="mx-4 md:mx-16 border-white border-b-4 hover:border-b-4 hover:border-green-600 transition duration-300">
           Blog
         </li>
-        <li className="mx-4 md:mx-16 hover:border-b-4 hover:border-green-600 transition duration-300">
+        <li className="mx-4 md:mx-16 border-white border-b-4 hover:border-b-4 hover:border-green-600 transition duration-300">
           Offers
         </li>
-        <li className="mx-4 md:mx-16 hover:border-b-4 hover:border-green-600 transition duration-300">
+        <li className="mx-4 md:mx-16 border-white border-b-4 hover:border-b-4 hover:border-green-600 transition duration-300">
           About Us
         </li>
       </ul>

@@ -44,6 +44,7 @@ const Sidebar = () => {
           />
           {clicked ? (
             <ul className="border-t-2">
+              {/* {Each Li tag consists of a tag inside it contains svg, name of items in sidebar inside a span tag and svg of arrow } */}
               <li
                 className={` ${
                   liclicked.dash ? "md:bg-green-200 text-green-600" : ""
