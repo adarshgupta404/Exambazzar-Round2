@@ -1,14 +1,13 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
 import BankDetails from "./components/BankDetails";
-
+import Sidebar from "./components/Sidebar";
 function App() {
   return (
     <div className="main">
       <Navbar />
-      <div className="md:flex md:w-full">
-        <Sidebar />
+      <div className="sidebank md:flex md:w-full">
+        <Sidebar/>
         <BankDetails />
       </div>
     </div>

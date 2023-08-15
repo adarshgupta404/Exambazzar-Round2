@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 export default function BankDetails() {
+  // {Making an object to store data from the users}
   const [formdata, setFormdata] = useState({
     accHoldname: "",
     accNum: "",
@@ -156,7 +157,7 @@ export default function BankDetails() {
             />
           </label>
           <label className="md:flex p-2">
-            <p className="font-bold pt-1">CONSENT</p>
+            <p className="font-bold ml-4 md:ml-0 pt-1">CONSENT</p>
             <div
               className={`md:w-1/2 md:ml-auto p-4 border rounded shadow-lg ${
                 submit ? "bg-green-50" : ""
