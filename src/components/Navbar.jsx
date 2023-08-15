@@ -45,7 +45,7 @@ const Navbar = () => {
           Offers
         </li>
         <li className="mx-4 md:mx-16 border-white border-b-4 hover:border-b-4 hover:border-green-600 transition duration-300">
-          About Us
+          About
         </li>
       </ul>
 
