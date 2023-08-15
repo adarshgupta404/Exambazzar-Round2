@@ -34,13 +34,13 @@ const Sidebar = () => {
     <div>
       <aside
           id="sidebar"
-          className={`md:w-${clicked ? "80" : "24"} md:bg-white md:static ${clicked?"w-full":"w-0"} bg-white md:w-full h-screen left-0 absolute
+          className={`md:w-${clicked ? "80" : "24"} md:bg-white md:static ${clicked?"w-full top-8":"w-0"} bg-white md:w-full h-screen left-0 absolute
            h-120 text-xl border-r border-gray-700 `}
         >
           <FontAwesomeIcon
             icon={clicked ? faArrowLeft : faArrowRight}
             onClick={handleToggle}
-            className={`mx-4 pb-4 mt-2 toggleButton text-2xl md:px-6 pb-0 mb-0 md:mt-4`}
+            className={`mx-4 pb-4 mt-2 md:static toggleButton text-2xl md:px-6 pb-0 mb-0 md:mt-4`}
           />
           {clicked ? (
             <ul className="border-t-2">
